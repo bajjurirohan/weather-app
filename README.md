@@ -1,5 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+This is a [Next.js](https://nextjs.org/) project 
 ## Getting Started
 
 First, run the development server:
@@ -14,23 +13,34 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About WeatherApp
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Weather API used:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+https://openweathermap.org/api
 
-## Learn More
+I have also used their Geolocation API to get Latitudes and Longitudes of City name, counrty name or Zipcodes.
 
-To learn more about Next.js, take a look at the following resources:
+API key is stored in .env file (you can create your own)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I have given my own API, I have questioned regarding this but didnt get any response so I have shared my API key.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Labels For Weather used:
 
-## Deploy on Vercel
+Blah.svg - Clouds
+Freezing.svg - Snow
+Sun.svg - Clear
+Typhoon.svg - Rain 
+Hell.svg - Others
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Files in App folder:
+- components: React Components
+- Utils: functions used in Components
+- lables: svgs used to describe the weather conditions
+- Index page starts from page.tsx
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Google Fonts used:
+- Montserrat
+- Poppins
+
+Used TailwindCSS for layout and style# weather-app
